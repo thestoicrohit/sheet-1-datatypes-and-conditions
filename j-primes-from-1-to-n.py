@@ -1,0 +1,11 @@
+n = int(input())
+ans = []
+for i in range(2, n + 1):
+    ok = True
+    for j in range(2, i):
+        if i % j == 0:
+            ok = False
+            break
+    if ok:
+        ans.append(str(i))
+print(" ".join(ans))
